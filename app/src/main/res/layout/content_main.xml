@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.akaver.puzzle15.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTimeLabel"
+            style="@style/textview_game_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Time: " />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            style="@style/textview_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textViewTimeLabel"
+            android:text="---" />
+
+        <TextView
+            android:id="@+id/textViewMoves"
+            style="@style/textview_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="---" />
+
+        <TextView
+            android:id="@+id/textViewMovesLabel"
+
+            style="@style/textview_game_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/textViewMoves"
+            android:text="Moves: " />
+
+    </RelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button00"
+            style="@style/button_game"
+            android:onClick="buttonClicked"
+            android:text="01"
+            app:layout_heightPercent="25%"
+            app:layout_marginLeftPercent="0%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button01"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button00"
+            android:layout_toRightOf="@id/button00"
+            android:onClick="buttonClicked"
+            android:text="02"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button02"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button01"
+            android:layout_toRightOf="@id/button01"
+            android:onClick="buttonClicked"
+            android:text="03"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button03"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button02"
+            android:layout_toRightOf="@id/button02"
+            android:onClick="buttonClicked"
+            android:text="04"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/button_game"
+            android:layout_below="@id/button00"
+            android:onClick="buttonClicked"
+            android:text="05"
+            app:layout_heightPercent="25%"
+            app:layout_marginLeftPercent="0%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button10"
+            android:layout_toRightOf="@id/button10"
+            android:onClick="buttonClicked"
+            android:text="06"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button12"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button11"
+            android:layout_toRightOf="@id/button11"
+            android:onClick="buttonClicked"
+            android:text="07"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button13"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button12"
+            android:layout_toRightOf="@id/button12"
+            android:onClick="buttonClicked"
+            android:text="08"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button20"
+            style="@style/button_game"
+            android:layout_below="@id/button10"
+            android:onClick="buttonClicked"
+            android:text="09"
+            app:layout_heightPercent="25%"
+            app:layout_marginLeftPercent="0%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button21"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button20"
+            android:layout_toRightOf="@id/button20"
+            android:onClick="buttonClicked"
+            android:text="10"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button22"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button21"
+            android:layout_toRightOf="@id/button21"
+            android:onClick="buttonClicked"
+            android:text="11"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button23"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button22"
+            android:layout_toRightOf="@id/button22"
+            android:onClick="buttonClicked"
+            android:text="12"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button30"
+            style="@style/button_game"
+            android:layout_below="@id/button20"
+            android:onClick="buttonClicked"
+            android:text="13"
+            app:layout_heightPercent="25%"
+            app:layout_marginLeftPercent="0%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button31"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button30"
+            android:layout_toRightOf="@id/button30"
+            android:onClick="buttonClicked"
+            android:text="14"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button32"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button31"
+            android:layout_toRightOf="@id/button31"
+            android:onClick="buttonClicked"
+            android:text="15"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+        <Button
+            android:id="@+id/button33"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button32"
+            android:layout_toRightOf="@id/button32"
+            android:onClick="buttonClicked"
+            android:text=""
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="25%" />
+
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>
